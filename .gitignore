@@ -1,0 +1,50 @@
+# Ren'Py automatically generated files
+/cache/
+/screens.rpyc
+/options.rpyc
+/persistent
+/saves/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Bytecode cache
+__pycache__/
+
+# Ren'Py archive files
+*.rpa
+
+# Temporary files and logs
+*.log
+*.bak
+*.tmp
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Git-specific files
+*.orig
+*.rej
+
+# Ignored by convention
+*.rpyc
+
+# If using virtual environments for Python
+/venv/
+/env/
+
+# If using specific build or export directories
+build/
+releases/
+exports/
