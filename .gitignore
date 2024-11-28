@@ -1,50 +1,27 @@
-# Ren'Py automatically generated files
-/cache/
-/screens.rpyc
-/options.rpyc
-/persistent
-/saves/
+# Logs
+log.txt
+traceback.txt
+errors.txt
 
-# Compiled Python files
+# macOS-related files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-related files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+# Ren'Py files
+*.rpyc
+*.rpyb
+*.rpymc
 *.pyc
 *.pyo
-*.pyd
 
-# Bytecode cache
-__pycache__/
-
-# Ren'Py archive files
-*.rpa
-
-# Temporary files and logs
-*.log
-*.bak
-*.tmp
-*.swp
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Editor-specific files
-.idea/
+[Gg]ame/saves/
+[Gg]ame/cache/
 .vscode/
-*.sublime-workspace
-*.sublime-project
-
-# Git-specific files
-*.orig
-*.rej
-
-# Ignored by convention
-*.rpyc
-
-# If using virtual environments for Python
-/venv/
-/env/
-
-# If using specific build or export directories
-build/
-releases/
-exports/

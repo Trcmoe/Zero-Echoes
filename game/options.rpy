@@ -21,7 +21,7 @@ define gui.show_name = True
 
 ## 游戏版本号。
 
-define config.version = "1.0"
+define config.version = "0.0.1"
 
 
 ## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
@@ -44,7 +44,7 @@ define build.name = "ZeroEchoes"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## 为了让用户在音效或语音轨道上播放测试音频，请取消对下面一行的注释并设置播放的
