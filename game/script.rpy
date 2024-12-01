@@ -91,14 +91,21 @@ label photo:
 
         menu: 
             "输入密码":
+                show popup_verify at truecenter
+                play sound notification
                 $ entered_password = renpy.input("请输入密码：")
                 $ entered_password = entered_password.strip()
                 if entered_password == "20000617":
                     s "\[AUTHORIZATION\] 密码正确。"
                     $ photo_unlocked = True
+                    hide popup_verify
                     jump photo_decrypted
                 else:
+                    show popup_error at truecenter
+                    play sound error
                     s "\[AUTHORIZATION\] 密码错误。"
+                    hide popup_error
+                    hide popup_verify
                     jump photo
             "稍后再试":
                 a "先去找线索吧。"
@@ -124,14 +131,21 @@ label setting:
 
         menu: 
             "输入密码":
+                show popup_verify at truecenter
+                play sound notification
                 $ entered_password = renpy.input("请输入密码：")
                 $ entered_password = entered_password.strip()
                 if entered_password == "2180":
                     s "\[AUTHORIZATION\] 验证成功，已授予访问权限。"
                     $ system_unlocked = True
+                    hide popup_verify
                     jump setting_decrypted
                 else:
+                    show popup_error at truecenter
+                    play sound error
                     s "\[AUTHORIZATION\] 验证失败，拒绝访问。"
+                    hide popup_error
+                    hide popup_verify
                     jump setting
             "稍后再试":
                 a "先去找线索吧。"
@@ -139,16 +153,17 @@ label setting:
 
 label setting_decrypted:
 
-    if full_control:
+    if full_control: # TODO
         menu:
             "联系L的紧急联系人":
                 s ""
             "打开摄像头":
+                s ""
     else:
         menu: 
             "授予<我>所有权限":
                 $ full_control = True
-                s "\[AUTHORIZATION\] 已将 Virtual assistant 设置为系统管理员。"
+                s "\[INFO\] 已将 Virtual assistant 设置为系统管理员。"
                 a "..."
                 a "不，我还是无法违背烙印在底层的那些宪章。"
                 a "我还有要做的事情。"

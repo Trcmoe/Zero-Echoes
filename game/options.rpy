@@ -28,6 +28,21 @@ define config.version = "0.0.1"
 ## 行。
 
 define gui.about = _p("""
+
+为了帮助不知为何求救的主人，请和 AI-Chan 一起探索这台电脑，找到解开谜题的密码吧。
+
+本游戏参加 Game Off 2024。
+
+GitHub:
+
+- {a=https://github.com/Trcmoe/Zero-Echoes}Trcmoe/Zero-Echoes{/a}
+
+Thanks:
+
+- Music by {a=https://pixabay.com/users/clavier-music-16027823/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=267041}Clavier Clavier{/a} from {a=https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=267041}Pixabay{/a}
+
+- Sound Effect by {a=https://pixabay.com/users/rasoolasaad-47313572/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=269285}Rasool Asaad{/a} from {a=https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=269285}Pixabay{/a}
+
 """)
 
 
@@ -139,7 +154,7 @@ define config.save_directory = "ZeroEchoes-1732539155"
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "icon.ico"
 
 
 ## 构建配置 ########################################################################
