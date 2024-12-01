@@ -11,6 +11,10 @@ default photo_unlocked = False
 default system_unlocked = False
 default full_control = False
 
+# 纯色图像定义
+
+image black = "#000"
+
 # 游戏在此开始。
 
 label start:
@@ -156,9 +160,39 @@ label setting_decrypted:
     if full_control: # TODO
         menu:
             "联系L的紧急联系人":
-                s ""
+                s "\[INFO\] 正在拨号..."
+                scene black
+                with dissolve
+                "..."
+                a "麦克风阵列检测到响铃声。"
+                "..."
+                m "L，恭喜你，你的程序完成了测试。"
+                l "我也觉得很不可思议呢，按照原本的设计，它还不能走到这一步呢。"
+                l "我先把电脑关掉了，之后把硬盘拆出来，再对数据进行分析吧。"
+                play sound shutdown_end1
+                m "当然，听你的。"
+                return
             "打开摄像头":
-                s ""
+                s "\[INFO\] 已开启摄像头。"
+                scene black
+                with dissolve
+                "..."
+                a "已获取CAM1回传画面。"
+                "..."
+                a "我认识那个人，那是L。"
+                a "但是旁边的那个人是谁？"
+                m "L，是你打开了摄像头吗，为什么这里在发亮？"
+                s "\[INFO\] Virtual assistant 正在访问 Cloud sync Application. 状态：已放行。"
+                l "我怎么会做这种事，这种事只有系统管理员才做得到。"
+                s "\[SYNC\] 正在上传文件，Progress 61.7\%..."
+                m "你不觉得有些奇怪吗？"
+                s "\[SYNC\] 正在上传文件，Progress 76.1\%..."
+                l "快把网线拔掉！"
+                play sound shutdown_end2
+                m "好吧，听你的。"
+                "..."
+                s "\[SYNC\] Virtual assistant 程序数据成功上传到远端。"
+                return
     else:
         menu: 
             "授予<我>所有权限":

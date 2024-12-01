@@ -154,7 +154,7 @@ define config.save_directory = "ZeroEchoes-1732539155"
 ##
 ## 在任务栏或 Dock 上显示的图标。
 
-define config.window_icon = "icon.ico"
+define config.window_icon = "gui/icon.ico"
 
 
 ## 构建配置 ########################################################################
